@@ -152,5 +152,6 @@ button:hover {
     #kills, #deaths, #assists, textarea {
         height: 40px;
         width: 220px;
+        font-size: 16px;
     }
 }
