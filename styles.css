@@ -111,6 +111,7 @@ button:hover {
 
 #inputs-section input {
     color: white;
+    font-size: 16px;
 }
 
 #inputs-section input:focus {
