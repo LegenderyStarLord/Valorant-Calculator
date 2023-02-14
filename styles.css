@@ -1,0 +1,155 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body { 
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+} 
+
+body::after {
+    background-image: url(valorant-img.png.jpg);
+    width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center 0;
+    background-size: cover;
+    filter: brightness(30%);
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;  
+    content: "";
+}
+
+h1 {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 2.5rem;
+}
+
+#inputs-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+#buttons-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+#games-count, #games-title {
+    display: inline-block;
+    padding: 10px;
+}
+
+#error-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px;
+    text-align: center;
+    letter-spacing: 1.5px;
+}
+
+#error-message {
+    min-width: 100px;
+    height: 50px;
+}
+
+button {
+    width: 150px;
+    height: 40px;
+    background-color: #8C8C8B;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #595857;
+    border: 2px solid;
+    border-color: #8C8C8B;
+    transition: 0.5s;
+}
+
+#games-count-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+#kills, #deaths, #assists, textarea {
+    background-color: transparent;
+    border: 3px solid #8C8C8B;
+    border-radius: 10px;
+    height: 30px;
+    outline: none;
+    padding-left: 10px;
+}
+
+.input-error-style {
+    border: 3px solid #DB3166 !important; 
+}
+
+#inputs-section input {
+    color: white;
+}
+
+#inputs-section input:focus {
+    border: 3px solid #61FAF8;
+    transition: 0.5s;
+}
+
+#form {
+    margin-top: 100px;
+}
+
+@media (max-width: 768px) {
+    #submit-btn-containter {
+        display: flex;
+        flex-basis: 100%; 
+        margin-top: 30px;
+    }
+
+    #submit-btn {
+        margin:0 auto;
+        display:block;
+    }
+}
+
+@media (max-width: 576px) {
+    #form {
+        margin-top: 50px;
+    }
+
+    #inputs-section {
+        flex-direction: column;
+    }
+
+    #error-section {
+        margin-bottom: 30px;
+    }
+
+    #kills, #deaths, #assists, textarea {
+        height: 40px;
+        width: 220px;
+    }
+}

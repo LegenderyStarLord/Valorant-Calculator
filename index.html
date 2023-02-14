@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Valorant KDA Calculator</h1>
+    <form id="form">
+        <div id="inputs-section">
+            <input id="kills" name="kills" placeholder="kills" autocomplete="off"/>
+            <input id="deaths" placeholder="deaths" autocomplete="off"/>
+            <input id="assists" placeholder="assists" autocomplete="off"/>
+            <div id="submit-btn-containter">
+                <button id="submit-btn" type="submit">Submit</button>
+            </div>
+        </div>
+        <div id="error-section">
+            <p id="error-message">Please enter you kda in last games</p>
+        </div>
+        <div id="games-count-section">
+            <p id="games-title">Games: </p>
+            <p id="games-count">0</p>
+        </div>
+    </form>
+    <div id="buttons-section"> 
+        <button id="show-result-btn" onclick="showResult()">Show Result</button>
+        <button id="reset-btn" onclick="reset()">Reset</button>
+    </div>   
+</body>
+<script src="index.js"></script>
+</html>
